@@ -13,12 +13,12 @@ class BaseOptions():
         parser.add_argument('--checkpoint', default='./log/')
 
         # data augmentation
-        parser.add_argument('--classes', default=2)
-        parser.add_argument('--epochs', default=400)
-        parser.add_argument('--iterations', default=1000)
-        parser.add_argument('--start_epoch', default=0)
-        parser.add_argument('--train_batch', default=200)
-        parser.add_argument('--test_batch', default=200)
+        parser.add_argument('--classes', default=2, type=int)
+        parser.add_argument('--epochs', default=400, type=int)
+        parser.add_argument('--iterations', default=1000, type=int)
+        parser.add_argument('--start_epoch', default=0, type=int)
+        parser.add_argument('--train_batch', default=200, type=int)
+        parser.add_argument('--test_batch', default=200, type=int)
         parser.add_argument('--lr', default=0.04)
         parser.add_argument('--schedule', default=[50, 250, 500, 750])
         parser.add_argument('--momentum', default=0.1)
